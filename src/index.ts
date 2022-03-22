@@ -1,10 +1,5 @@
 import "./index.html";
 
-import "./css/style.min.css";
+import "./css/style.scss";
 
-import "./js/tabs.ts";
-import "./js/modal.ts";
-import "./js/menu.ts";
-import "./js/accordeon.ts";
-import "./js/timer.ts";
-import "./js/scroll.ts";
+import "./js/main.ts";

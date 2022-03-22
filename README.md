@@ -1,4 +1,4 @@
-# https://mindr17.github.io/glo-portfolio/
+# https://mindr17.github.io/methed-news/
 
 ```
 yarn
