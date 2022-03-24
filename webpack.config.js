@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+// const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -55,6 +56,13 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
+  // optimization: {
+  //   minimizer: [
+  //     // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
+  //     // `...`,
+  //     new CssMinimizerPlugin(),
+  //   ],
+  // },
   plugins: [
     new HtmlWebpackPlugin({
       template: "src/index.html",
@@ -63,7 +71,7 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     assetModuleFilename: "[path]/[name][ext]",
-    chunkFilename: '[id].[chunkhash].js',
+    chunkFilename: "[id].[chunkhash].js",
     path: path.resolve(__dirname, "."),
     // path: path.resolve(__dirname, "dist"),
     publicPath: "auto",

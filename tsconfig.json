@@ -8,7 +8,9 @@
     "skipLibCheck": true,
     // "outDir": "dist/",
     "outDir": ".",
-    "downlevelIteration": true
+    "downlevelIteration": true,
+
+    // "moduleResolution": "node",    
   },
   "exclude": [
     "node_modules"
