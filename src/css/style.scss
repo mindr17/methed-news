@@ -244,3 +244,19 @@ $mobile-breakpoint: 768px;
     color: black;
   }
 }
+
+.preload {
+  background-image: url('../img/preload.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+  animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating {
+  to {
+    transform: rotate(-360deg);
+  }
+}

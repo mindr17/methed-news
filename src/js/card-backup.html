@@ -1,0 +1,18 @@
+<a href="${url}" class="news-link-wrapper" target="_blank">
+	<div class="news-item__image-wrapper">
+		<img src="${urlToImage}" alt="${title}" class="news-image" width="270" height="200">
+	</div>
+
+	<h3 class="news-title">
+		<span class="news-link">${title}</span>
+	</h3>
+</a>
+	
+<p class="news-description">${description || ''}</p>
+
+<div class="news-footer">
+	<time class="news-datetime" datetime="${publishedAt}">
+		${getDateCorrectFormat(publishedAt)}
+	</time>
+	<div class="news-author">${author || ''}</div>
+</div>
